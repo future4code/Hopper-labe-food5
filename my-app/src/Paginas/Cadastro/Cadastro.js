@@ -22,10 +22,22 @@ export default function Cadastro() {
 
         <div class="">
 
-          <input placeholder="Name*"></input>
-          <input placeholder="E-mail*"></input>
-          <input placeholder="Cpf*"></input>
-          <input placeholder="Password*"></input>
+          <input
+          type={text}
+          placeholder="Name"
+          />
+          <input
+          type={email}
+          placeholder="E-mail"
+          />
+          <input
+          type={text}
+          placeholder="Cpf"
+          />
+          <input
+          type={password}
+          placeholder="Senha"
+          />
 
         </div>
 

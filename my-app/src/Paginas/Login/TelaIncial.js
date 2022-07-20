@@ -1,18 +1,24 @@
-import React from "react";
-import future from "./Imagens/TelaInicial.png";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom"
 
 
-export default function TelaInicial() {
-  return (
-    <div>
-      <div>
+const TelaInicial = () => {
+    const navigate = useNavigate();
 
-        <img src={future}></img>
+    const renderizaTela = () => {
+        navigate.push('/login')
+    }
 
-      </div>
-    </div>
+    useEffect(() => {
+        setTimeout(renderizaTela, 3000)
+    }, [])
 
-
-
-  );
+    return(
+        <div>
+            <img src="../../logo.png" />
+        </div>
+    );
 }
+
+    
+export default TelaInicial
