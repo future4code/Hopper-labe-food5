@@ -1,16 +1,19 @@
 import React from "react";
-import from "";
+import {  useNavigate } from "react-router-dom";
+
 
 
 export default function MeuEndereco () {
+  
+  const navigate = useNavigate()
   return (
     <div>
       <div>
-        <button> Voltar</button>
+        <button onClick={()=>navigate("/")}> Voltar</button>
       </div>
       <div>
 
-        <img src={}></img>
+        <img src=""></img>
 
       </div>
 
@@ -29,7 +32,7 @@ export default function MeuEndereco () {
         </div>
 
       </form>
-      <button type="submit" className="">Salvar</button>
+      <button onClick={()=>navigate("/login")} type="submit" className="">Salvar</button>
     </div>
 
   );

@@ -1,16 +1,18 @@
 import React from "react";
-import from "";
+import {  useNavigate } from "react-router-dom";
 
 
 export default function Cadastro() {
+  
+  const navigate = useNavigate()
   return (
     <div>
       <div>
-        <button> voltar</button>
+        <button onClick={()=>navigate("/login")} > voltar</button>
       </div>
       <div>
 
-        <img src={}></img>
+        <img src=""></img>
 
       </div>
 
@@ -28,7 +30,7 @@ export default function Cadastro() {
         </div>
 
       </form>
-      <button type="submit" className="">Criar Conta</button>
+      <button onClick={()=>navigate("/endereco")}  type="submit" className="">Criar Conta</button>
     </div>
 
   );
