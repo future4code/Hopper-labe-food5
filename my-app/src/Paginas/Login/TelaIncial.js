@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom"
 
 
-const TelaInicial = () => {
+ export const TelaInicial = () => {
     const navigate = useNavigate();
 
     const renderizaTela = () => {
@@ -18,7 +18,7 @@ const TelaInicial = () => {
             <img src="../../logo.png" />
         </div>
     );
-}
+};
 
     
-export default TelaInicial
+

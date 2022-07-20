@@ -1,29 +1,27 @@
 import React from "react";
-import {  useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+import {goToCadastro, goToHome} from ".../Rotas/Cordenador.js";
 
-
-export default function Login() {
-  
-  const navigate = useNavigate()
-  
+ function Login() {
   return (
     <div>
       <div>
-        <img src=""></img>
+ 
       </div>
       <div><h3>Entrar</h3></div>
       <form>
       <div>
         <input
-        type={email}
+        type={"email"}
         placeholder="email@email.com"> e-mail</input>
         <input
-        type={password}
+        type={"password"}
         placeholder="Mínimo 6 caracteres"> Senha</input>
-        <button onClick={() => navigate("/")}>Entrar</button>
+        <button onClick={() => goToHome(navigate)}>Entrar</button>
       </div>
       </form>
-      <button onClick={()=>navigate("/cadastro")} className="">Não possui cadastro? Clique aqui.</button>
+      <button onClick={() => goToCadastro(navigate)} className="">Não possui cadastro? Clique aqui.</button>
     </div>
   );
-}
+};
+export default Login;

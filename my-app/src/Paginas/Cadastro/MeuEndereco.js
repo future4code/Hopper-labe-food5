@@ -1,5 +1,6 @@
 import React from "react";
 import {  useNavigate } from "react-router-dom";
+import { goToHome, goToLogin } from "../../Rotas/Cordenador";
 
 
 
@@ -10,11 +11,11 @@ export default function MeuEndereco () {
   return (
     <div>
       <div>
-        <button onClick={()=>navigate("/")}> Voltar</button>
+        <button onClick={() => goToHome(navigate)} > Voltar</button>
       </div>
       <div>
 
-        <img src=""></img>
+        <img src=""/>
 
       </div>
 
@@ -24,26 +25,26 @@ export default function MeuEndereco () {
 
         <div class="">
           <input
-          type={text}
+          type={"text"}
           placeholder="Rua / Av"></input>
           <input
-          type={number}
+          type={"number"}
           placeholder="Numero"></input>
           <input 
-          ype={text}
+          type={"text"}
           placeholder="Apto / Bloco"></input>
           <input
-          type={text}
+          type={"text"}
           placeholder="Bairro"></input>
           <input
-          type={text}
+          type={"text"}
           placeholder="Cidade"></input>
           <input 
-          type={text}
+          type={"text"}
           placeholder="Estado"></input>
         </div>
       </form>
-      <button onClick={()=>navigate("/login")} type="submit" className="">Salvar</button>
+      <button onClick={() => goToLogin(navigate)} type="submit" className="">Salvar</button>
     </div>
 
   );

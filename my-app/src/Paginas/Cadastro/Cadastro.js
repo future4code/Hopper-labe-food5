@@ -1,5 +1,6 @@
 import React from "react";
 import {  useNavigate } from "react-router-dom";
+import { goToEndereco, goToLogin } from "../../Rotas/Cordenador";
 
 
 export default function Cadastro() {
@@ -8,7 +9,7 @@ export default function Cadastro() {
   return (
     <div>
       <div>
-        <button onClick={()=>navigate("/login")} > voltar</button>
+        <button onClick={() => goToLogin(navigate)} > voltar</button>
       </div>
       <div>
 
@@ -42,7 +43,7 @@ export default function Cadastro() {
         </div>
 
       </form>
-      <button onClick={()=>navigate("/endereco")}  type="submit" className="">Criar Conta</button>
+      <button onClick={() => goToEndereco(navigate)}  type="submit" className="">Criar Conta</button>
     </div>
 
   );
