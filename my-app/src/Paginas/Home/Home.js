@@ -5,6 +5,7 @@ import Footer from "../../Componentes/Footer";
 
 
 export default function Home() {
+ 
   return (
     <div>
       <div>
@@ -22,7 +23,7 @@ export default function Home() {
         </div>
         // card de lanchonetes
 
-        -
+        
        <Card/>
 
       </div>

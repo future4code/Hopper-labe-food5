@@ -1,10 +1,12 @@
-import { Router } from "react-router-dom";
 
+import {Router} from "./Rotas/Router"
 
 function App() {
+
+  
   return (
     <div >
-     <Router/>
+    <Router/>
     </div>
   );
 }
