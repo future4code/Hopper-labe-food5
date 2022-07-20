@@ -5,7 +5,8 @@ import {  useNavigate } from "react-router-dom";
 
 export default function MeuEndereco () {
   
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
   return (
     <div>
       <div>
@@ -22,15 +23,25 @@ export default function MeuEndereco () {
       <form>
 
         <div class="">
-
-          <input placeholder="Rua / Av*"></input>
-          <input placeholder="Numero*"></input>
-          <input placeholder="Apto / Bloco*"></input>
-          <input placeholder="Bairro*"></input>
-          <input placeholder="Cidade*"></input>
-          <input placeholder="Estado*"></input>
+          <input
+          type={text}
+          placeholder="Rua / Av"></input>
+          <input
+          type={number}
+          placeholder="Numero"></input>
+          <input 
+          ype={text}
+          placeholder="Apto / Bloco"></input>
+          <input
+          type={text}
+          placeholder="Bairro"></input>
+          <input
+          type={text}
+          placeholder="Cidade"></input>
+          <input 
+          type={text}
+          placeholder="Estado"></input>
         </div>
-
       </form>
       <button onClick={()=>navigate("/login")} type="submit" className="">Salvar</button>
     </div>

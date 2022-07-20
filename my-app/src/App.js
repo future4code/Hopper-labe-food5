@@ -1,9 +1,10 @@
-import TelaInicial from "./Paginas/Login/TelaIncial";
+import { Router } from "react-router-dom";
+
 
 function App() {
   return (
     <div >
-      <TelaInicial/>
+     <Router/>
     </div>
   );
 }
