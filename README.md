@@ -1,5 +1,5 @@
 <h1 align="center"> :hamburger: :pizza: Future Eats em andamento ...... :hourglass: </h1>
-<h3> O objetivo so projeto é reproduzirmos um aplicativo de food. Onde os usuários fazem o cadastro ou login, realizam os pedido, escolhem a forma de pagamento
+<h3> O objetivo do projeto é reproduzirmos um aplicativo de food. Onde os usuários fazem o cadastro ou login, realizam os pedido, escolhem a forma de pagamento
 e visualizam o tempo estimado.</h3>
 
 ##
