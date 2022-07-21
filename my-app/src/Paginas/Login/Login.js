@@ -1,13 +1,15 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
-import {goToCadastro, goToHome} from ".../Rotas/Cordenador.js";
+// import {goToCadastro, goToHome} from ".../Rotas/Cordenador.js";
+
+
 
  function Login() {
+
+  const navigate = useNavigate()
+
   return (
     <div>
-      <div>
- 
-      </div>
       <div><h3>Entrar</h3></div>
       <form>
       <div>
@@ -17,10 +19,10 @@ import {goToCadastro, goToHome} from ".../Rotas/Cordenador.js";
         <input
         type={"password"}
         placeholder="Mínimo 6 caracteres"> Senha</input>
-        <button onClick={() => goToHome(navigate)}>Entrar</button>
+        <button onClick={() => navigate("/")}>Entrar</button>
       </div>
       </form>
-      <button onClick={() => goToCadastro(navigate)} className="">Não possui cadastro? Clique aqui.</button>
+      <button onClick={() =>navigate("/cadastro")} className="">Não possui cadastro? Clique aqui.</button>
     </div>
   );
 };
