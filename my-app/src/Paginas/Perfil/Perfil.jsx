@@ -1,5 +1,4 @@
 import React from "react";
-// import Card from "../../Componentes/Card";
 import Footer from "../../Componentes/Footer";
 import { BsChevronLeft } from "react-icons/bs"
 import { useNavigate } from "react-router-dom";
@@ -11,7 +10,7 @@ export default function Perfil() {
   return (
     <div>
       <div>
-        <button class="" onClick={()=> navigate("/")}>
+        <button class="" onClick={()=> navigate("/home")}>
           <BsChevronLeft/>
           {/* <img src="" /> */}
         </button>

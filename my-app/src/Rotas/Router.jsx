@@ -5,6 +5,7 @@ import Carrinho from "../Paginas/Carrinho/Carrinho";
 import Login from "../Paginas/Login/Login"
 import MeuEndereco from "../Paginas/Cadastro/MeuEndereco";
 import Perfil from "../Paginas/Perfil/Perfil";
+import { TelaInicial } from "../Paginas/Login/TelaIncial";
 
 
 
@@ -16,7 +17,8 @@ export const Router = () => {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home/>} />
+                    <Route path="/" element={<TelaInicial/>} />
+                    <Route path="/home" element={<Home/>} />
                     <Route path="/cadastro" element={<Cadastro/>} />
                     <Route path="/carrinho" element={<Carrinho/>} />
                     <Route path="/login" element={<Login/>} />

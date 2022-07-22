@@ -9,7 +9,6 @@ export default function Card() {
         <div>
           <div>
             <button>
-                
                 <div>
                   <p>tempo</p>
                   <p>frete</p>
