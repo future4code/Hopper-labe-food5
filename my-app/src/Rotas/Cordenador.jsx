@@ -2,7 +2,7 @@
 
 
 export function goToHome (navigate){
-    navigate("/")
+    navigate("/home")
 }
 
 export function goToCadastro (navigate){

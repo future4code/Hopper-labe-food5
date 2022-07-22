@@ -15,10 +15,7 @@ import { useNavigate } from "react-router-dom"
 
     return(
         <div>
-            <img src="../../logo.png" />
+            <img src="../../logo.png" alt="Tela inicial do aplicativo"/>
         </div>
     );
 };
-
-    
-
