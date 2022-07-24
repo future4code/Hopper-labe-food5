@@ -1,25 +1,26 @@
 import React from "react";
-import {AiOutlineHome} from 'react-icons/ai'
-import {BsCart3, BsPerson} from 'react-icons/bs'
+import { AiOutlineHome } from 'react-icons/ai'
+import { BsCart3, BsPerson } from 'react-icons/bs'
 import { useNavigate } from "react-router-dom";
-import { goToCarrinho, goToHome, goToPerfil} from "../Rotas/Cordenador";
-
+import './css/Componentes.css';
 
 export default function Footer() {
 
   const navigate = useNavigate()
 
   return (
-    <div>
-      <button className="" onClick={() => goToHome(navigate)}>
-        <AiOutlineHome/>
-      </button>
-      <button className="" onClick={() => goToCarrinho(navigate)}>
-        <BsCart3/>
-      </button>
-      <button className="" onClick={() => goToPerfil(navigate)}>
-       <BsPerson/>
-      </button>
+    <div className="body">
+      <div className="Footer">
+        <button className="btn-footer" onClick={() => navigate("/")}>
+          <AiOutlineHome className="icon"/>
+        </button>
+        <button className="btn-footer" onClick={() => navigate("/carrinho")}>
+          <BsCart3 className="icon" />
+        </button>
+        <button className="btn-footer" onClick={() => navigate("/perfil")}>
+          <BsPerson className="icon " />
+        </button>
+      </div>
     </div>
   );
 }

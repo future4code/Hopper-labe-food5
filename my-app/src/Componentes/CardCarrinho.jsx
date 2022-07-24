@@ -5,7 +5,6 @@ export default function CardCarrinho() {
   return (
     <div>
       <div>
-   
         <div class="">
           <img class=""/>
             <div>
@@ -26,4 +25,4 @@ export default function CardCarrinho() {
 
 
   );
-};
+}
