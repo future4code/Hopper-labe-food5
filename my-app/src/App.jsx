@@ -1,12 +1,14 @@
 
-import {Router} from "./Rotas/Router"
+import { Router } from "./Rotas/Router"
+import { GlobalStyled } from "./StyledGlobal";
 
 function App() {
 
-  
+
   return (
     <div >
-    <Router/>
+      <GlobalStyled/>
+      <Router />
     </div>
   );
 }

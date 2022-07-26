@@ -1,51 +1,52 @@
 import React from "react";
-import {  useNavigate } from "react-router-dom";
-import { goToHome, goToLogin } from "../../Rotas/Cordenador";
+import { useNavigate } from "react-router-dom"
+import {IoIosArrowBack} from 'react-icons/io'
+import { Div } from "./StyledEndereco";
 
 
+const CadastroEndereço = () => {
 
-export default function MeuEndereco () {
-  
-  const navigate = useNavigate();
+    const navigate = useNavigate()
 
-  return (
-    <div>
-      <div>
-        <button onClick={() => goToHome(navigate)} > Voltar</button>
-      </div>
-      <div>
+    return(
+        <Div>
+            <header onClick={() => navigate('/cadastro')}><IoIosArrowBack fontSize={25}/>
+            <hr/>
+            </header>
+            <span>
+                <p>Meu endereço</p>
+                <input
+                type="text"
+                placeholder="Rua / Av."
+                />
+                </span>
+                <br/>
+                <span>
+                <input
+                type="number"
+                placeholder="Número" 
+                />
+                </span><br/>
+                <span>
+                    <input
+                    type="text"
+                    placeholder="Complemento"/>
+                </span><br/>
+                <span>
+                    <input
+                    type="text"
+                    placeholder="Cidade"
+                    />
+                </span><br/>
+                <span>
+                    <input
+                    type="text"
+                    placeholder="Estado"
+                    />
+                </span><br/>
+            <button onClick={() => navigate('/home')}>Salvar</button>
 
-        <img src=""/>
-
-      </div>
-
-
-      <div><p class="">Meu endereço </p></div>
-      <form>
-
-        <div class="">
-          <input
-          type={"text"}
-          placeholder="Rua / Av"></input>
-          <input
-          type={"number"}
-          placeholder="Numero"></input>
-          <input 
-          type={"text"}
-          placeholder="Apto / Bloco"></input>
-          <input
-          type={"text"}
-          placeholder="Bairro"></input>
-          <input
-          type={"text"}
-          placeholder="Cidade"></input>
-          <input 
-          type={"text"}
-          placeholder="Estado"></input>
-        </div>
-      </form>
-      <button onClick={() => goToLogin(navigate)} type="submit" className="">Salvar</button>
-    </div>
-
-  );
+        </Div>
+    );
 }
+export default CadastroEndereço
