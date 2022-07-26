@@ -1,8 +1,5 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
-// import {goToCadastro, goToHome} from ".../Rotas/Cordenador.js";
-
-
 
  function Login() {
 
@@ -10,15 +7,17 @@ import {useNavigate} from "react-router-dom";
 
   return (
     <div>
-      <div><h3>Entrar</h3></div>
+      <div>
+        <h3>Entrar</h3>
+      </div>
       <form>
       <div>
         <input
         type={"email"}
-        placeholder="email@email.com"> e-mail</input>
+        placeholder="email@email.com"/>
         <input
         type={"password"}
-        placeholder="Mínimo 6 caracteres"> Senha</input>
+        placeholder="Mínimo 6 caracteres"/>
         <button onClick={() => navigate("/")}>Entrar</button>
       </div>
       </form>
