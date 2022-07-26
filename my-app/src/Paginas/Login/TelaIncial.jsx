@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom"
+import { ContainerTelaInicial } from "./StyledTelaInicial";
 
 
- export const TelaInicial = () => {
+
+
+export const TelaInicial = () => {
     const navigate = useNavigate();
 
     const renderizaTela = () => {
@@ -13,9 +16,9 @@ import { useNavigate } from "react-router-dom"
         setTimeout(renderizaTela, 3000)
     }, [])
 
-    return(
-        <div>
-            <img src="../../logo.png" alt="Tela inicial do aplicativo"/>
-        </div>
+    return (
+        <ContainerTelaInicial>
+            <img src="../../logo.png" alt="Tela inicial do aplicativo" />
+        </ContainerTelaInicial>
     );
 };

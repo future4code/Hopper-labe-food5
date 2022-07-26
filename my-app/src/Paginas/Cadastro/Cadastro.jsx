@@ -1,50 +1,52 @@
 import React from "react";
-import {  useNavigate } from "react-router-dom";
-import { goToEndereco, goToLogin } from "../../Rotas/Cordenador";
+import { useNavigate } from "react-router-dom"
+import {IoIosArrowBack} from "react-icons/io"
+import { ContainerCadastro } from "./StyledCadastro";
 
 
-export default function Cadastro() {
-  
-  const navigate = useNavigate()
-  return (
-    <div>
-      <div>
-        <button onClick={() => goToLogin(navigate)} > voltar</button>
-      </div>
-      <div>
+const Cadastro = () => {
 
-        <img src=""></img>
+    const navigate = useNavigate()
 
-      </div>
-
-
-      <div><p class=""> Cadastrar </p></div>
-      <form>
-
-        <div class="">
-
-          <input
-          type={text}
-          placeholder="Name"
-          />
-          <input
-          type={email}
-          placeholder="E-mail"
-          />
-          <input
-          type={text}
-          placeholder="Cpf"
-          />
-          <input
-          type={password}
-          placeholder="Senha"
-          />
-
-        </div>
-
-      </form>
-      <button onClick={() => goToEndereco(navigate)}  type="submit" className="">Criar Conta</button>
-    </div>
-
-  );
+    return(
+        <ContainerCadastro>
+            <header onClick={() => navigate('/')}><IoIosArrowBack fontSize={25}/>
+            <hr/>
+            <img src='../../logoFuture.png'/>
+            </header>
+            <span>
+                <p>Cadastrar</p>
+                <input
+                type="text"
+                placeholder="Nome Completo"
+                />
+                </span>
+                <br/>
+                <span>
+                <input
+                type="email"
+                placeholder="E-mail" 
+                />
+                </span><br/>
+                <span>
+                    <input
+                    type="text"
+                    placeholder="CPF"/>
+                </span><br/>
+                <span>
+                    <input
+                    type="password"
+                    placeholder="Senha"
+                    />
+                </span><br/>
+                <span>
+                    <input
+                    type="password"
+                    placeholder="Confirmar Senha"
+                    />
+                </span><br/>
+            <button onClick={() => navigate('/endereco')}>Criar</button>
+        </ContainerCadastro>
+    );
 }
+export default Cadastro

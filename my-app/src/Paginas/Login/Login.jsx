@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../../constants/Constants";
 import {useForm} from "../../hooks/useForm"
+import { Container } from "./StyledLogin";
 
 
 function Login() {
@@ -42,9 +43,9 @@ function Login() {
   };
 
   return (
-    <div>
+    <Container>
       <div>
-        <img src=''/>
+        <img src='../../logoFuture.png'/>
         <p>Entrar</p>
         <form onSubmit={submit}>
           <input
@@ -71,10 +72,10 @@ function Login() {
             required
           />
           <button onClick={submitLogin}>Entrar</button>
-          <p onClick={() => navigate('/cadastro')}>Não possui cadastro? Clique aqui.</p>
+          <p onClick={() => navigate('/cadastro')} className="">Não possui cadastro? Clique aqui.</p>
         </form>
       </div>
-    </div>
+    </Container>
   );
 }
 export default Login;
