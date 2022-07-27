@@ -6,6 +6,7 @@ import Login from "../Paginas/Login/Login"
 import MeuEndereco from "../Paginas/Cadastro/MeuEndereco";
 import Perfil from "../Paginas/Perfil/Perfil";
 import { TelaInicial } from "../Paginas/Login/TelaIncial";
+import DetalhesPagina from "../detalhes/DetalhesPagina";
 
 
 
@@ -23,6 +24,7 @@ export const Router = () => {
                     <Route path="/carrinho" element={<Carrinho/>} />
                     <Route path="/login" element={<Login/>} />
                     <Route path="/perfil" element={<Perfil/>} />
+                    <Route path={"/restaurants/:id"} element={<DetalhesPagina/>} />
                     <Route path="/endereco" element={<MeuEndereco/>} />
                   
                 </Routes>
