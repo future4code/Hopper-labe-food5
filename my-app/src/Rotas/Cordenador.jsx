@@ -1,5 +1,5 @@
 export function goToHome (navigate){
-    navigate("/home")
+    navigate("/restaurants")
 }
 
 export function goToCadastro (navigate){

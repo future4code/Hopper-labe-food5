@@ -18,11 +18,11 @@ export const Router = () => {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Login/>} />
-                    <Route path="/home" element={<Home/>} />
+                    <Route path="/" element={<TelaInicial/>} />
+                    <Route path="/login" element={<Login/>} />
+                    <Route path="/restaurants" element={<Home/>} />
                     <Route path="/cadastro" element={<Cadastro/>} />
                     <Route path="/carrinho" element={<Carrinho/>} />
-                    <Route path="/login" element={<TelaInicial/>} />
                     <Route path="/perfil" element={<Perfil/>} />
                     <Route path={"/restaurants/:id"} element={<DetalhesPagina/>} />
                     <Route path="/endereco" element={<MeuEndereco/>} />
