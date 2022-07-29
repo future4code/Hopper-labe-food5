@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BASE_URL } from "../constants/constants";
+import { BASE_URL} from '../constants/Constants'
 import axios from "axios";
 
 const useData = (param) => {
@@ -9,6 +9,7 @@ const useData = (param) => {
 
   useEffect(() => {
     getData()
+      // eslint-disable-next-line
   }, [])
 
   const getData = () => {
@@ -20,7 +21,7 @@ const useData = (param) => {
     }
     axios.get(`${BASE_URL + param}`, headers)
     .then((res) => {
-      setData(res.data.restaurants)
+      setData(res.data)
     }).catch((err) => {
       alert(err.response.data.message)
     }).finally(() => {

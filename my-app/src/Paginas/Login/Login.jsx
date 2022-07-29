@@ -44,7 +44,7 @@ function Login() {
     <Container>
       <div>
         <img src='../../logoFuture.png'/>
-        <p>Entrar</p>
+        <p>Login</p>
         <form onSubmit={submit}>
           <input
             name={"email"}
@@ -72,7 +72,7 @@ function Login() {
             required
           />
           <button onClick={submitLogin} fullWidth>Entrar</button>
-          <p onClick={() => navigate('/cadastro')} className="">Não possui cadastro? Clique aqui.</p>
+          <p onClick={() => navigate('/cadastro')} className="cadastro">Não possui cadastro? Clique aqui.</p>
         </form>
       </div>
     </Container>

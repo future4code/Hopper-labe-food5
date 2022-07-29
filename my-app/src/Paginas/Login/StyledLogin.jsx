@@ -4,42 +4,57 @@ export const Container = styled.div `
         p{
             text-align: center;
             cursor: pointer;
+            font-size: 30px;
         }
-
+        .cadastro{
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+        }
         img{
             position: static;
-            width: 100px;
-            margin: 60px 128px 16px;
+            width: 150px;
+            margin: 60px 60px 60px 100px;
             object-fit: contain;
             margin-top: 10vH;
+            
         }
 
         div{
             display: grid;
             width: 1024px;
             flex-wrap:wrap;
-            margin: 50px auto;
+            
             justify-content: center;
             align-items: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
         }
         input{
             position: static;
             border: 1px solid #B8B8B8;
             border-radius: 6px;
-            width: 350px;
+            width: 300px;
             height: 50px;
+            margin: 20px 0 0 0;
         }
 
         button{
             position: static;
             background-color: #5CB646;
-            margin-top: 1rem;
-            width: 360px;
+            margin: 2rem 0 2rem 0;
+            width: 300px;
             height: 50px;
             padding: 10px;
             border: 1px solid #B8B8B8;
             border-radius: 6px;
             cursor: pointer;
+            font-size: 25px;
         }
 
         @media screen and (max-device-width: 750px) {

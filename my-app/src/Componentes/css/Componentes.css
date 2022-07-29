@@ -6,7 +6,7 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
-
+    
 }
 
 .Footer {
@@ -124,6 +124,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%
+    
 }
 
 .card-frete {

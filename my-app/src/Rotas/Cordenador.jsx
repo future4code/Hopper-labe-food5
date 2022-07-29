@@ -10,6 +10,10 @@ export function goToCarrinho(navigate){
     navigate("/carrinho")
 }
 
+export const goToDetalhes = (navigate, id) => {
+    navigate(`/restaurants/${id}`)
+}
+
 export function goToLogin(navigate){
     navigate("/login")
 }
